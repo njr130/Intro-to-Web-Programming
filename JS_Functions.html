@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title> Choose your starter!</title>
+		<style>
+		img {
+		height: 200px;
+		width: 200px;
+		}
+		</style>
+    </head>
+    <body>
+	<h1> CHOOSE YOUR STARTER </h1>
+        <div>
+			1)<img src="bulbasaur.png" onclick="bulbasaur()">
+			2)<img src="squirtle.png" onclick="squirtle()">
+			3)<img src="charmander.png" onclick="charmander()">
+		</div>
+		<div id='bulbtext'>Bulbasaur is a grass-type</div>
+		<div id='squirtletext'>Squirtle is a water-type</div>
+		<div id='chartext'>Charmander is a fire-type</div>
+
+	<br />
+	
+	<script>
+		document.getElementById("bulbtext").style.visibility = "hidden";
+		document.getElementById("squirtletext").style.visibility = "hidden";
+		document.getElementById("chartext").style.visibility = "hidden";
+		
+		function bulbasaur() {
+			document.getElementById("bulbtext").style.visibility = "visible";
+			document.getElementById("squirtletext").style.visibility = "hidden";
+			document.getElementById("chartext").style.visibility = "hidden";
+		}
+		function charmander() {
+			document.getElementById("chartext").style.visibility = "visible";
+			document.getElementById("squirtletext").style.visibility = "hidden";
+			document.getElementById("bulbtext").style.visibility = "hidden";
+		}
+		function squirtle() {
+			document.getElementById("squirtletext").style.visibility = "visible";
+			document.getElementById("bulbtext").style.visibility = "hidden";
+			document.getElementById("chartext").style.visibility = "hidden";
+		}
+	</script>
+	
+    </body>
+</html>
