@@ -1,0 +1,1 @@
+document.write("<span id='footer'>Nathan's Website<br>Nathan Roberts<br>Published on Mar 5 2018<br>Retrieved: "+Date()+"</span>");
