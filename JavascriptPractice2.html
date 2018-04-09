@@ -1,0 +1,27 @@
+<html>
+<body>
+
+	<p id="out"></p>
+
+
+	<script>
+		var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+		var phrase = prompt("Enter a phrase");
+		var reverse="";
+		for (var x = phrase.length-1; x>=0 ; x--){
+			reverse+=phrase.charAt(x);
+		}
+		
+		var letterCount=0;
+		for (var x = 0; x<phrase.length;x++){
+			if (alphabet.includes(phrase.charAt(x))){
+				letterCount++;
+			}
+		}
+		if (reverse==phrase){
+			document.getElementById("out").style.color="blue";
+		}
+		document.getElementById("out").innerHTML="Phrase in reverse is: "+reverse+"<br>Number of letters is: "+letterCount;
+	</script>
+</body>
+</html>
